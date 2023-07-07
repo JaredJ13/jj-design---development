@@ -1,9 +1,8 @@
-import CustomHeader from "../components/customHeader"
+import CustomHeader from "../components/Header/CustomHeader"
 
 export default function Home() {
     return (
         <>
-            <h1>hi</h1>
             <CustomHeader name='Jared' />
         </>
     )
