@@ -108,7 +108,7 @@ export const Card = styled.div`
     margin: 4rem 0 2rem 0;
     background-color: #1b1b1b;
     filter: drop-shadow(0px 0px 15px #ffffff);
-    border-radius: 3px;
+    border-radius: 2px;
 
     .left-side{
         width: 30%;
