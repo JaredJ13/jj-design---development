@@ -60,7 +60,7 @@ export default function AboutMe() {
                     <MySkillsContainer>
                         <MySkillsContainerRow>
                             <img src={JSIcon} alt='JavaScript icon' />
-                            <img src={ReactIcon} alt='ReactJS icon' />
+                            <img className='react-icon' src={ReactIcon} alt='ReactJS icon' />
                             <img src={NodeJSIcon} alt='NodeJS icon' />
                         </MySkillsContainerRow>
                         <MySkillsContainerRow>
@@ -74,12 +74,12 @@ export default function AboutMe() {
                         </MySkillsContainerRow>
                         <MySkillsContainerRow>
                             <img src={MySqlIcon} alt='MySQL icon' />
-                            <img src={FirebaseIcon} alt='Google Firebase icon' />
+                            <img className='firebase-icon' src={FirebaseIcon} alt='Google Firebase icon' />
                             <img src={OracleIcon} alt='Oracle icon' />
                         </MySkillsContainerRow>
                         <MySkillsContainerRow>
                             <img src={GithubIcon} alt='Github icon' />
-                            <img src={FigmaIcon} alt='Figma icon' />
+                            <img className='figma-icon' src={FigmaIcon} alt='Figma icon' />
                         </MySkillsContainerRow>
                     </MySkillsContainer>
                 </InnerContainer>

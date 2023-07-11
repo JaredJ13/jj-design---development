@@ -51,10 +51,24 @@ export const MySkillsContainer = styled.div`
     img{
         width: 8rem;
     }
+
+    .react-icon{
+        width: 7rem;
+    }
+
+    .firebase-icon{
+        width: 6rem;
+    }
+
+    .figma-icon{
+        width: 6rem;
+    }
 `
+
 export const MySkillsContainerRow = styled.div`
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     width: 50%;
     margin: 0 auto 1.5rem auto;
     padding-bottom:1rem ;
