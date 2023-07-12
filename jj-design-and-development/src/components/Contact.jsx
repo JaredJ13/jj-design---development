@@ -1,11 +1,99 @@
-import { Container, H2, InnerContainer } from "../styles/styled-components/all-styled-components";
+import { useRef, useState, useEffect } from 'react'
+import emailjs from '@emailjs/browser';
+import { BarLoader } from 'react-spinners';
+
+import { ContactContainer, Container, Flex, H2, H2TitleContainer, InnerContainer, ArrowContainer } from "../styles/styled-components/all-styled-components";
+
+// icons
+import UpArrowIcon from '../assets/white-icons/icons8-up-arrow-100.png'
 
 export default function Contact() {
+    const [emailSuccess, setEmailSuccess] = useState('')
+    const [emailError, setEmailError] = useState('')
+    const [loading, setLoading] = useState(false)
+
+    // anytime success message is changed change it back to '' after 6 seconds
+    useEffect(() => {
+        const stateTimer = async () => {
+            await new Promise((resolve) => setTimeout(resolve, 9000)).then(() => {
+                setEmailSuccess('')
+                setEmailError('')
+            })
+        };
+        stateTimer()
+    }, [emailSuccess, emailError])
+
+    // runs when submitting email to send
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setLoading(true)
+        emailjs.sendForm(
+            import.meta.env.VITE_REACT_APP_SERVICE_ID,
+            import.meta.env.VITE_REACT_APP_TEMPLATE_ID,
+            form.current,
+            import.meta.env.VITE_REACT_APP_USER_ID
+        ).then(
+            result => {
+                setEmailSuccess("Email sent successfully");
+                setLoading(false)
+            },
+            error => {
+                setEmailError("Email send error")
+                setLoading(false)
+            }
+        );
+    }
+
     return (
         <>
             <Container>
                 <InnerContainer>
-                    <H2>Get in Touch</H2>
+                    <H2TitleContainer>
+                        <H2 margin='8rem 0 0 0'>Get in Touch</H2>
+                    </H2TitleContainer>
+                    <ContactContainer>
+                        <Flex>
+                            <div className='left-side'>
+                                <p className='paragraph'>
+                                    To reach out about work, business, or anything in the tech field, send me a message using the form below. I’m always happy to chat tech!
+                                </p>
+                                <p className='paragraph'>
+                                    I am currently looking for internship and/or jr. dev positions.
+                                </p>
+                                <p className='last-paragraph'>
+                                    *Interested in getting your own quality website or web application built? Send a message with your project details for a quote or just a general inquiry about your project vision and I will get back to you asap!
+                                </p>
+                            </div>
+                            <div className='middle'></div>
+                            <div className='right-side'>
+                                <form ref={form} onSubmit={(e) => sendEmail(e)}>
+                                    <label name='users_name'>Name</label>
+                                    <input type='text' name='users_name' required />
+                                    <label name='users_email'>Email</label>
+                                    <input type='email' name='users_email' required />
+                                    <label name="users_message">Message</label>
+                                    <textarea name='users_message' required />
+                                    {loading ? <BarLoader
+                                        color='orange'
+                                        loading={loading}
+                                        size={150}
+                                        aria-label="Loading Spinner"
+                                        data-testid="loader"
+                                        className='loading-bar'
+                                    /> : ''}
+                                    {emailSuccess !== '' && emailSuccess !== null ? <p className='email-success-message'>{emailSuccess}</p> : ''}
+                                    {emailError !== '' && emailError !== null ? <p className='email-error-message'>{emailError}</p> : ''}
+                                    <input className='submit-button' type='submit' value="Send Email" ></input>
+                                </form>
+                            </div>
+                        </Flex>
+                    </ContactContainer>
+                    <ArrowContainer>
+                        <img src={UpArrowIcon} alt='An up arrow icon' />
+                        <p>Return to Top</p>
+                    </ArrowContainer>
                 </InnerContainer>
             </Container>
         </>
