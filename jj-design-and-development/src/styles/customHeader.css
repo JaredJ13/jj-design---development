@@ -41,22 +41,22 @@
     margin: 0 0 0 0px;
 } */
 
-.header-flex ul li {
+.header-li {
     font-family: 'Rufina', serif;
     margin-right: 2rem;
     margin-left: 2rem;
     color: #dabfa7;
 }
 
-.header-flex li:first-of-type{
+.header-li:first-of-type{
     margin-left: 0.8rem;
 }
 
-.header-flex li:last-of-type{
+.header-li:last-of-type{
     margin-right: 0.8rem;
 }
 
-.header-flex ul li:hover{
+.header-li:hover{
     color: white;
     transition: 0.2s ease-in;
     cursor: pointer;

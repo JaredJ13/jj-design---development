@@ -4,7 +4,7 @@ import '../../styles/customHeader.css'
 
 export default function MobileNavLinks(props) {
     return (
-        <ul className='mobile-nav-links'>
+        <ul id='nav-menu' className='mobile-nav-links'>
             <li>About Me</li>
             <li>Projects</li>
             <li>Contact</li>

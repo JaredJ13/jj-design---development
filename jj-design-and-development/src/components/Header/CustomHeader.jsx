@@ -1,13 +1,14 @@
-import { useState } from 'react'
+import { useState, useEffect, forwardRef } from 'react'
+import { Link } from 'react-scroll'
+
 import '../../styles/customHeader.css'
 import MobileNavLinks from './MobileNavLinks'
-import { TbMenu } from 'react-icons/tb'
+import { TbHandClick, TbMenu } from 'react-icons/tb'
 import { IoMdClose } from 'react-icons/io'
-import { Link } from 'react-router-dom'
 
 import SiteLogo from '../../assets/jj-design-and-dev-logo.svg';
 
-export default function CustomHeader(props) {
+const CustomHeader = forwardRef((props, ref) => {
   const [openMenu, setOpenMenu] = useState(false);
 
   const hamburgerIcon = <TbMenu className='open-icon' size='3.5rem' color='white' onClick={() => setOpenMenu(!openMenu)} />
@@ -18,13 +19,13 @@ export default function CustomHeader(props) {
 
   return (
     <>
-      <div className='header-container'>
+      <div id='nav-menu' className='header-container'>
         <div className='header-flex'>
           <img src={SiteLogo} className='site-logo' alt='JJ Design & Development website logo' />
           <ul>
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <Link className='header-li' to='about-me' smooth={true} duration={1000}>About Me</Link>
+            <Link className='header-li' to='projects' smooth={true} duration={1000}>Projects</Link>
+            <Link className='header-li' to='contact' smooth={true} duration={1000}>Contact</Link>
           </ul>
         </div>
         <div className='mobile-menu'>
@@ -36,4 +37,10 @@ export default function CustomHeader(props) {
       </div>
     </>
   )
-}
+})
+
+CustomHeader.displayName = 'CustomHeader';
+
+export default CustomHeader;
+
+

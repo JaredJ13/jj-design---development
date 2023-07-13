@@ -13,7 +13,7 @@ export default function Projects() {
             <Container>
                 <InnerContainer>
                     <H2TitleContainer>
-                        <H2>Projects</H2>
+                        <H2 id="projects">Projects</H2>
                     </H2TitleContainer>
                     <Card>
                         <Flex>

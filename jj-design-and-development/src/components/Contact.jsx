@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react'
 import emailjs from '@emailjs/browser';
 import { BarLoader } from 'react-spinners';
+import { Link } from 'react-scroll';
 
 import { ContactContainer, Container, Flex, H2, H2TitleContainer, InnerContainer, ArrowContainer } from "../styles/styled-components/all-styled-components";
 
@@ -51,7 +52,7 @@ export default function Contact() {
             <Container>
                 <InnerContainer>
                     <H2TitleContainer>
-                        <H2 margin='8rem 0 0 0'>Get in Touch</H2>
+                        <H2 id='contact' margin='8rem 0 0 0'>Get in Touch</H2>
                     </H2TitleContainer>
                     <ContactContainer>
                         <Flex>
@@ -91,8 +92,8 @@ export default function Contact() {
                         </Flex>
                     </ContactContainer>
                     <ArrowContainer>
-                        <img src={UpArrowIcon} alt='An up arrow icon' />
-                        <p>Return to Top</p>
+                        <Link to='nav-menu' smooth={true} duration={1000}><img src={UpArrowIcon} alt='An up arrow icon' /></Link>
+                        <Link to='nav-menu' smooth={true} duration={1000}><p>Return to Top</p></Link>
                     </ArrowContainer>
                 </InnerContainer>
             </Container>

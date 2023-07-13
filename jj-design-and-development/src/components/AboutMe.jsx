@@ -38,7 +38,7 @@ export default function AboutMe() {
             <Container>
                 <InnerContainer>
                     <H2TitleContainer>
-                        <H2>About Me</H2>
+                        <H2 id='about-me'>About Me</H2>
                     </H2TitleContainer>
                     <AboutIcon src={ProgrammingIcon} alt='Desktop monitor with coding icon' />
                     <AboutParagraph>
