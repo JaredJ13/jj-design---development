@@ -73,7 +73,7 @@
     cursor: pointer;
 }
 
-.mobile-nav-links a{
+.mobile-nav-links{
     width: 100%;
     text-align: center;
     color: #ff7c00;
@@ -91,14 +91,14 @@
     border-top: 1px solid #ff7c00;
 }
 
-.mobile-nav-links li:hover{
+.header-li-mobile:hover{
     color: #ffffff;
     transition: 0.3s ease-in;
     cursor: pointer;
     background-color: rgba(255, 161, 38, 0.548);
 }
 
-.mobile-nav-links li{
+.header-li-mobile li{
     font-family: 'Rufina', sans-serif;
     background-color: rgba(66, 66, 66, 0.822);
     padding-bottom: 2rem;
