@@ -1,5 +1,23 @@
 import styled from 'styled-components'
 
+const breakpoints = {
+    xs: "320px",
+    sm: "640px",
+    md: "768px",
+    lg: "1024px",
+    xl: "1280px",
+    xxl: "1536px",
+}
+
+const devices = {
+    xs: `(max-width: ${breakpoints.xs})`,
+    sm: `(max-width: ${breakpoints.sm})`,
+    md: `(max-width: ${breakpoints.md})`,
+    lg: `(max-width: ${breakpoints.lg})`,
+    xl: `(max-width: ${breakpoints.xl})`,
+    xxl: `(max-width: ${breakpoints.xxl})`,
+}
+
 // *********Container Components*********
 export const Container = styled.section`
     background-color: #000;
@@ -31,7 +49,11 @@ export const H2TitleContainer = styled.div`
     width: 386px;
     background-color: #000000;
     border-bottom: 1px solid #afe1f6;
-    margin: 0 auto;
+    margin: 5rem auto 0 auto;
+
+    @media only screen and (max-width:1280px ){
+        width: 40%;
+    }
 `
 
 export const H2 = styled.h2`
@@ -57,19 +79,46 @@ export const MySkillsContainer = styled.div`
 
     img{
         width: 8rem;
+        @media only screen and (max-width:768px ){
+        width: 7rem;}
+
+        @media only screen and (max-width:640px ){
+        width: 6rem;}
     }
 
     .react-icon{
         width: 7rem;
+        @media only screen and (max-width:768px ){
+        width: 6rem;}
+        @media only screen and (max-width:640px ){
+        width: 5rem;}
     }
 
     .firebase-icon{
         width: 6rem;
+        @media only screen and (max-width:768px ){
+        width: 5rem;}
+        @media only screen and (max-width:640px ){
+        width: 4rem;}
     }
 
     .figma-icon{
         width: 6rem;
+        @media only screen and (max-width:768px ){
+        width: 5rem;}
+        @media only screen and (max-width:640px ){
+        width: 5rem;}
     }
+
+    @media only screen and (max-width:1280px ){
+        width: 40rem;
+    }
+
+    @media only screen and (max-width:640px ){
+        width: 22rem;}
+
+    @media only screen and (max-width:320px ){
+        width: 18rem;}
 `
 
 export const MySkillsContainerRow = styled.div`
@@ -80,6 +129,16 @@ export const MySkillsContainerRow = styled.div`
     margin: 0 auto 1.5rem auto;
     padding-bottom:1rem ;
     border-bottom: 1px solid #dabfa7;
+
+    @media only screen and (max-width:1280px ){
+        width: 50%;
+    }
+
+    @media only screen and (max-width:640px ){
+        width: 100%;}
+
+    @media only screen and (max-width:320px ){
+        width: 100%;}
 `
 
 export const AboutParagraph = styled.div`
@@ -91,6 +150,10 @@ export const AboutParagraph = styled.div`
 
     p{
         font-family: 'Oxygen', sans-serif;
+    }
+
+    @media only screen and (max-width:1280px ){
+        width: 100%;
     }
 `
 
@@ -108,6 +171,7 @@ export const H3 = styled.h3`
 export const Card = styled.div`
     width: 100%;
     min-height: 360px;
+    max-height: fit-content;
     margin: 4rem 0 2rem 0;
     background-color: #1b1b1b;
     filter: drop-shadow(0px 0px 15px #ffffff);
@@ -115,7 +179,7 @@ export const Card = styled.div`
 
     .left-side{
         width: 30%;
-        height: 360px;
+        min-height: 360px;
         background-color: #1b1b1b;
     }
 
@@ -127,7 +191,7 @@ export const Card = styled.div`
 
     .right-side{
         width: 69%;
-        height: 360px;
+        min-height: 360px;
         background-color: #1b1b1b;
     }
 
@@ -236,7 +300,7 @@ export const ContactContainer = styled.div`
 `
 
 export const ArrowContainer = styled.div`
-    margin: 0 auto;
+    margin: 4rem auto 0 auto;
     width: 8rem;
 
     img{
@@ -260,7 +324,7 @@ export const ArrowContainer = styled.div`
     }
 `
 
-// *********Contact Page Components*********
+// *********Footer Components*********
 export const FooterContainer = styled.div`
     margin-top: 8rem;
 
