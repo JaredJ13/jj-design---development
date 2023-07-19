@@ -310,8 +310,7 @@ export const H3 = styled.h3`
 // *********Projects Page Components*********
 export const Card = styled.div`
     width: 100%;
-    min-height: 360px;
-    max-height: fit-content;
+    height: 360px;
     margin: 4rem 0 2rem 0;
     background-color: #1b1b1b;
     filter: drop-shadow(0px 0px 15px #ffffff);
@@ -319,8 +318,21 @@ export const Card = styled.div`
 
     .left-side{
         width: 30%;
-        min-height: 360px;
+        height: 360px;
         background-color: #1b1b1b;
+    }
+
+    .left-side img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        transition: all 5s linear;
+    }
+
+    .left-side img:hover{
+        cursor: pointer;
+        object-position: bottom;
     }
 
     .mini-div{
@@ -331,7 +343,7 @@ export const Card = styled.div`
 
     .right-side{
         width: 69%;
-        min-height: 360px;
+        height: 360px;
         background-color: #1b1b1b;
     }
 

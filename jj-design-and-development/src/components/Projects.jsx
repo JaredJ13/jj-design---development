@@ -6,6 +6,9 @@ import NodeJSIcon from '../assets/white-icons/icons8-nodejs-100.png';
 import CssIcon from '../assets/white-icons/icons8-css3-100.png';
 import FirebaseIcon from '../assets/white-icons/icons8-firebase-100.png';
 
+// img imports
+import HazzardCountyProject from '../assets/hazzard-county-project/hazzard-project-combined.jpg'
+
 
 export default function Projects() {
     return (
@@ -18,7 +21,7 @@ export default function Projects() {
                     <Card>
                         <Flex>
                             <div className="left-side">
-
+                                <a href="https://hazzardcountybarandgrill.ca"><img src={HazzardCountyProject} alt="hazzardcountybarandgrill.ca website overview" /></a>
                             </div>
                             <div className="mini-div"></div>
                             <div className="right-side">
@@ -34,7 +37,7 @@ export default function Projects() {
                                     </p>
                                     <p>
                                         The site features an admin component that allows an admin
-                                        to login and perform basic CRUD functionalities to manage
+                                        to login and perform CRUD functionalities to manage
                                         the upcoming music posts on the “Live Music” page.
                                     </p>
                                 </div>
