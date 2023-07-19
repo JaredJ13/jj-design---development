@@ -1,5 +1,7 @@
 import { useRef } from "react"
 
+import '../styles/googleFonts.css'
+
 // component imports
 import CustomHeader from "../components/Header/CustomHeader"
 import AboutMe from "../components/AboutMe"

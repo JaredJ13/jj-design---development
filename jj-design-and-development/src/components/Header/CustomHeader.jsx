@@ -1,7 +1,6 @@
 import { useState, useEffect, forwardRef } from 'react'
 import { Link } from 'react-scroll'
 
-import '../../styles/customHeader.css'
 import { Header } from '../../styles/styled-components/all-styled-components'
 import MobileNavLinks from './MobileNavLinks'
 import { TbHandClick, TbMenu } from 'react-icons/tb'

@@ -9,15 +9,6 @@ const breakpoints = {
     xxl: "1536px",
 }
 
-const devices = {
-    xs: `(max-width: ${breakpoints.xs})`,
-    sm: `(max-width: ${breakpoints.sm})`,
-    md: `(max-width: ${breakpoints.md})`,
-    lg: `(max-width: ${breakpoints.lg})`,
-    xl: `(max-width: ${breakpoints.xl})`,
-    xxl: `(max-width: ${breakpoints.xxl})`,
-}
-
 // *********Header Components*********
 export const Header = styled.div`
     .header-container{
@@ -41,7 +32,7 @@ export const Header = styled.div`
         justify-content: center;
         width: 75%;
         margin: 0 auto;
-        padding: 9rem 0 3rem 0;
+        padding: 10rem 0 3rem 0;
     }
     
     .header-flex ul{
@@ -94,9 +85,10 @@ export const Header = styled.div`
     }
     
     .mobile-nav-links{
+        display: block;
         width: 100%;
         text-align: center;
-        color: #ff7c00;
+        color: #dabfa7;
     }
     
     .open-icon:hover{
@@ -108,19 +100,21 @@ export const Header = styled.div`
     }
     
     .mobile-nav-links{
-        border-top: 1px solid #ff7c00;
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid #afe1f6;
     }
     
     .header-li-mobile:hover{
         color: #ffffff;
         transition: 0.3s ease-in;
         cursor: pointer;
-        background-color: rgba(255, 161, 38, 0.548);
+        background-color: #afe1f6e7;
     }
     
-    .header-li-mobile li{
+    .header-li-mobile{
         font-family: 'Rufina', sans-serif;
-        background-color: rgba(66, 66, 66, 0.822);
+        background-color: rgba(8, 8, 8, 0.947);
         padding-bottom: 2rem;
         padding-top: 2rem;
     }
@@ -136,6 +130,17 @@ export const Header = styled.div`
     }
     
     /* responsive styles */
+    @media only screen and (max-width: 1024px){
+        .site-logo{
+            position: relative;
+        }
+
+        .header-flex{
+            flex-direction: column;
+            align-items: center;
+            padding-top: 5rem;
+        }
+    }
     
     @media only screen and (max-width: 580px){
         .header-flex ul:first-of-type{
