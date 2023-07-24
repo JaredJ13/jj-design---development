@@ -194,6 +194,10 @@ export const H2TitleContainer = styled.div`
     @media only screen and (max-width:1280px ){
         width: 40%;
     }
+
+    @media only screen and (max-width: 768px){
+        width: 50%;
+    }
 `
 
 export const H2 = styled.h2`
@@ -202,6 +206,10 @@ export const H2 = styled.h2`
     font-size: 22px;
     text-align: center;
     margin: ${(props) => props.margin};
+
+    @media only screen and (max-width: 320px){
+        font-size: 18px;
+    }
 `
 
 export const AboutIcon = styled.img`
@@ -295,6 +303,10 @@ export const AboutParagraph = styled.div`
     @media only screen and (max-width:1280px ){
         width: 100%;
     }
+
+    @media only screen and (max-width: 320px){
+        font-size: 12px;
+    }
 `
 
 export const H3 = styled.h3`
@@ -305,6 +317,10 @@ export const H3 = styled.h3`
     margin-top: 5rem;
     margin: ${(props) => props.margin};
     font-weight: ${(props) => props.fontWeight};
+
+    @media only screen and (max-width: 320px){
+        font-size: 18px;
+    }
 `
 
 // *********Projects Page Components*********
@@ -316,10 +332,18 @@ export const Card = styled.div`
     filter: drop-shadow(0px 0px 15px #ffffff);
     border-radius: 2px;
 
+    @media only screen and (max-width: 625px){
+            height: 100%;
+        }  
+
     .left-side{
         width: 30%;
         height: 360px;
         background-color: #1b1b1b;
+
+        @media only screen and (max-width: 625px){
+            width: 100%;
+        }  
     }
 
     .left-side img{
@@ -339,23 +363,45 @@ export const Card = styled.div`
         width: 1px;
         margin: 1% 0 1% 0.5rem;
         background-color: #ffffff;
+
+        @media only screen and (max-width: 625px){
+            display: none;
+        }
     }
 
     .right-side{
         width: 69%;
         height: 360px;
         background-color: #1b1b1b;
+        position: relative;
+
+        @media only screen and (max-width: 625px){
+            width: 100%;
+        }  
     }
 
     .right-p-container{
         border-top: 1px solid #ffffff;
         margin-right: 7%;
         padding: 2rem 0 0 1.5rem;
+        position: absolute;
 
         p{
             font-family: 'Oxygen', sans-serif;
             font-size: 16px;
             margin-bottom: 2rem;
+
+            @media only screen and (max-width: 1024px){
+                font-size: 14px;
+            }
+
+            @media only screen and (max-width: 768px){
+                font-size: 13px;
+            }
+
+            @media only screen and (max-width: 625px){
+                position: relative;
+            }  
         }
     }
 
@@ -363,6 +409,8 @@ export const Card = styled.div`
         width: 16rem;
         height: 7.8rem;
         margin-top: 4rem;
+        position: absolute;
+        bottom: -18px;      
     }
 
     .icon{
@@ -376,6 +424,18 @@ export const Card = styled.div`
 
     .firebase-icon{
         width: 3rem;
+    }
+`
+
+export const H3ProjectsExtend = styled(H3)`
+    @media only screen and (max-width: 768px){
+        font-size: 18px;
+    }
+`
+
+export const FlexProjectsExtend = styled(Flex)`
+    @media only screen and (max-width: 625px){
+        flex-direction: column-reverse;
     }
 `
 

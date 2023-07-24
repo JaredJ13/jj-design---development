@@ -1,4 +1,4 @@
-import { Container, H2TitleContainer, InnerContainer, H2, Card, Flex, H3 } from "../styles/styled-components/all-styled-components";
+import { Container, H2TitleContainer, InnerContainer, H2, Card, Flex, H3ProjectsExtend, FlexProjectsExtend } from "../styles/styled-components/all-styled-components";
 
 // icon imports
 import ReactIcon from '../assets/white-icons/icons8-react-native-100.png';
@@ -19,13 +19,13 @@ export default function Projects() {
                         <H2 id="projects">Projects</H2>
                     </H2TitleContainer>
                     <Card>
-                        <Flex>
+                        <FlexProjectsExtend>
                             <div className="left-side">
                                 <a href="https://hazzardcountybarandgrill.ca"><img src={HazzardCountyProject} alt="hazzardcountybarandgrill.ca website overview" /></a>
                             </div>
                             <div className="mini-div"></div>
                             <div className="right-side">
-                                <H3 margin='1.5rem 0 1rem 0' fontWeight='500'>Responsive Restaurant Web App</H3>
+                                <H3ProjectsExtend margin='1.5rem 0 1rem 0' fontWeight='500'>Responsive Restaurant Web App</H3ProjectsExtend>
                                 <div className="right-p-container">
                                     <p>
                                         This was built for a bar and grill in Sylvan Lake, AB.
@@ -50,7 +50,7 @@ export default function Projects() {
                                     </Flex>
                                 </div>
                             </div>
-                        </Flex>
+                        </FlexProjectsExtend>
                     </Card>
                 </InnerContainer>
             </Container>
