@@ -172,6 +172,10 @@ export const InnerContainer = styled.div`
     width: 70%;
     height: 100%;
     margin: 0 auto;
+
+    @media only screen and (max-width:625px){
+        width: 85%;
+    }
 `
 
 // *********Flex Components*********
