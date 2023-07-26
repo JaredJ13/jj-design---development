@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { BarLoader } from 'react-spinners';
 import { Link } from 'react-scroll';
 
-import { ContactContainer, Container, Flex, H2, H2TitleContainer, InnerContainer, ArrowContainer } from "../styles/styled-components/all-styled-components";
+import { ContactContainer, Container, Flex, H2, H2TitleContainer, InnerContainer, ArrowContainer, FlexContactExtend } from "../styles/styled-components/all-styled-components";
 
 // icons
 import UpArrowIcon from '../assets/white-icons/icons8-up-arrow-100.png'
@@ -55,7 +55,7 @@ export default function Contact() {
                         <H2 id='contact' margin='8rem 0 0 0'>Get in Touch</H2>
                     </H2TitleContainer>
                     <ContactContainer>
-                        <Flex>
+                        <FlexContactExtend>
                             <div className='left-side'>
                                 <p className='paragraph'>
                                     To reach out about work, business, or anything in the tech field, send me a message using the form below. I’m always happy to chat tech!
@@ -89,7 +89,7 @@ export default function Contact() {
                                     <input className='submit-button' type='submit' value="Send Email" ></input>
                                 </form>
                             </div>
-                        </Flex>
+                        </FlexContactExtend>
                     </ContactContainer>
                     <ArrowContainer>
                         <Link to='nav-menu' smooth={true} duration={1000}><img src={UpArrowIcon} alt='An up arrow icon' /></Link>

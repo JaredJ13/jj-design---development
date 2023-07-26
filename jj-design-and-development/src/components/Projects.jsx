@@ -42,7 +42,7 @@ export default function Projects() {
                                     </p>
                                 </div>
                                 <div className="right-icon-container">
-                                    <Flex justifyContent='space-evenly' margin='0 0 0 1.2rem'>
+                                    <Flex justifyContent='start' margin='0 0 0 1.2rem'>
                                         <img className='icon' src={ReactIcon} alt='ReactJS icon' />
                                         <img className='icon node-icon' src={NodeJSIcon} alt='NodeJS icon' />
                                         <img className='icon' src={CssIcon} alt='CSS3 icon' />

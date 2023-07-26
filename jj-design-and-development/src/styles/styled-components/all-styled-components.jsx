@@ -188,7 +188,7 @@ export const Flex = styled.div`
 export const H2TitleContainer = styled.div`
     width: 386px;
     background-color: #000000;
-    border-bottom: 1px solid #afe1f6;
+    /* border-bottom: 1px solid #afe1f6; */
     margin: 5rem auto 0 auto;
 
     @media only screen and (max-width:1280px ){
@@ -293,7 +293,7 @@ export const AboutParagraph = styled.div`
     width: 80rem;
     height: 100%;
     margin: 0 auto 0rem auto;
-    text-align: center;
+    
     border-top: 1px solid #dabfa7;
 
     p{
@@ -402,6 +402,14 @@ export const Card = styled.div`
             @media only screen and (max-width: 625px){
                 position: relative;
             }  
+
+            @media only screen and (max-width: 432px){
+                font-size: 12px;
+            }
+
+            @media only screen and (max-width: 320px){
+                font-size: 11px;
+            }
         }
     }
 
@@ -410,12 +418,20 @@ export const Card = styled.div`
         height: 7.8rem;
         margin-top: 4rem;
         position: absolute;
-        bottom: -18px;      
+        bottom: -18px;   
+        
+        @media only screen and (max-width: 432px){
+            bottom: -35px;
+        }
     }
 
     .icon{
         margin-top: 1rem;
         width: 3.5rem;
+
+        @media only screen and (max-width: 432px){
+            width: 2.5rem;
+        }
     }
 
     .node-icon{
@@ -424,12 +440,28 @@ export const Card = styled.div`
 
     .firebase-icon{
         width: 3rem;
+
+        @media only screen and (max-width: 432px){
+            width: 2rem;
+        }
     }
 `
 
 export const H3ProjectsExtend = styled(H3)`
     @media only screen and (max-width: 768px){
         font-size: 18px;
+    }
+
+    @media only screen and (max-width: 432px){
+        font-size: 16px;
+    }
+
+    @media only screen and (max-width: 338px){
+        font-size: 14px;
+    }
+
+    @media only screen and (max-width: 320px){
+        font-size: 12px;
     }
 `
 
@@ -447,12 +479,21 @@ export const ContactContainer = styled.div`
 
     .left-side{
         width: 42%;
+
+        @media only screen and (max-width: 625px){
+            width: 100%;
+            margin-bottom: 3rem;
+        }
     }
 
     p{
         color: #fff;
         font-size: 16px;
         font-family: 'Oxygen', sans-serif;
+
+        @media only screen and (max-width: 432px){
+            font-size: 15px;
+        }
     }
 
     .paragraph{
@@ -467,10 +508,20 @@ export const ContactContainer = styled.div`
         margin: 0 auto;
         width: 1px;
         background-color: #afe1f6; 
+
+        @media only screen and (max-width: 625px){
+            width: 100%;
+            height: 1px;
+            margin-bottom: 3rem;
+        }
     }
 
     .right-side{
         width: 42%;
+
+        @media only screen and (max-width: 625px){
+            width: 100%;
+        }
     }
 
     label{
@@ -491,6 +542,10 @@ export const ContactContainer = styled.div`
         width: 100%;
         font-family: 'Oxygen', sans-serif;
         font-size: 16px;
+
+        @media only screen and (max-width: 625px){
+            height: 12rem;
+        }
     }
 
     .submit-button{
@@ -508,6 +563,12 @@ export const ContactContainer = styled.div`
         background-color: #afe1f6;
         transition: 0.3s ease-in;
         font-size: 17px;
+    }
+`
+
+export const FlexContactExtend = styled(Flex)`
+    @media only screen and (max-width: 625px){
+        flex-direction: column;
     }
 `
 
