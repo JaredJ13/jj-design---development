@@ -603,12 +603,24 @@ export const ArrowContainer = styled.div`
 
 // *********Footer Components*********
 export const FooterContainer = styled.div`
-    margin-top: 8rem;
+    margin: 8rem 0 0 0;
+    padding-bottom: 0.2rem;
+    line-height: 1;
 
     p{
         font-family: 'Oxygen', sans-serif;
         font-size: 10px;
         color: #fff;
         text-align: center;
+    }
+
+    a{
+        width: 2rem;
+        margin: 0 0 0 0.2rem;
+    }
+
+    a:hover{
+        cursor: pointer;
+        color: blue;
     }
 `

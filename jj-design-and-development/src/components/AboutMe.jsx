@@ -43,7 +43,7 @@ export default function AboutMe() {
                     <AboutIcon src={ProgrammingIcon} alt='Desktop monitor with coding icon' />
                     <AboutParagraph>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Hi, my name is Jared Jahnke. I'm a front-end developer who is passionate and excited about anything to do with computers/tech. I have completed a two-year computer software development diploma with honors from the Northern Alberta Institute of Technology and have developed a small, but serious, arsenal of coding skills. Since I was young I have always been enchanted by the idea of how lines of code can be used to produce pretty much anything you can imagine; I attempted to teach myself online a few times throughout my teenage years but, due to the vast amount of technologies available, I had trouble finding the best place to start. I tried a multiple
                         </p>
                     </AboutParagraph>
                     <Flex>
@@ -53,10 +53,10 @@ export default function AboutMe() {
                     </Flex>
                     <AboutParagraph>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Outside of coding I enjoy a variety of hobbies such as lifting heavy objects in the gym, playing an assortment of competitive/strategic games like chess and Rainbow Six Siege, and listening to music (Zach Bryan is on shuffle right now) and playing music (currently teaching myself guitar!).
                         </p>
                     </AboutParagraph>
-                    <H3>- My Skills -</H3>
+                    <H3>- Skills -</H3>
                     <MySkillsContainer>
                         <MySkillsContainerRow>
                             <img src={JSIcon} alt='JavaScript icon' />

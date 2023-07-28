@@ -77,7 +77,7 @@ export default function Contact() {
                                     <label name="users_message">Message</label>
                                     <textarea name='users_message' required />
                                     {loading ? <BarLoader
-                                        color='orange'
+                                        color='#afe1f6e7'
                                         loading={loading}
                                         size={150}
                                         aria-label="Loading Spinner"
