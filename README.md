@@ -24,6 +24,6 @@ Built with React.js.
     npm run build
 ```
 
-## [JJDev.ca](jjdev.ca)
+## [JJDev.ca](https://jjdev.ca)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cfae294f-879c-4b20-988f-8d4f661b4562/deploy-status)](https://app.netlify.com/sites/jjdev/deploys)
