@@ -178,6 +178,12 @@ export const InnerContainer = styled.div`
     }
 `
 
+export const InnerContainerProjectsExtend = styled(InnerContainer)`
+@media only screen and (max-width:625px){
+    padding-bottom: 45rem;   
+}
+`
+
 // *********Flex Components*********
 export const Flex = styled.div`
     display: flex;
@@ -449,6 +455,16 @@ export const Card = styled.div`
             width: 2rem;
         }
     }
+`
+
+export const ResourceProjectCardExtend = styled(Card)`
+    height: 475px;
+    margin-top: 8rem;
+
+    .right-side, .left-side{
+        height: 475px;
+    }
+
 `
 
 export const H3ProjectsExtend = styled(H3)`

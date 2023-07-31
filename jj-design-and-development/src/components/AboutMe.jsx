@@ -43,7 +43,7 @@ export default function AboutMe() {
                     <AboutIcon src={ProgrammingIcon} alt='Desktop monitor with coding icon' />
                     <AboutParagraph>
                         <p>
-                            Hi, my name is Jared Jahnke. I'm a front-end developer who has completed a two-year computer software development diploma with honors from the Northern Alberta Institute of Technology and have developed a small, but serious, arsenal of coding skills.<br /><br /> Since I was young I have always been enchanted by the idea of how lines of code can be used to produce pretty much anything you can imagine; I attempted to teach myself online a few times throughout my teenage years but, due to the vast amount of technologies available, I had trouble finding the best place to start. I explored a few different fields after highschool but was eventually drawn back to my strong desire to become a developer and I have no regrets, this is my passion! I am consistently sharpening my skills and looking to learn further and grow as a developer.
+                            Hi, my name is Jared Jahnke. I'm a junior developer who has completed a two-year computer software development diploma with honors from the Northern Alberta Institute of Technology and have developed a small, but serious, arsenal of coding skills. I enjoy working with Javascript, React, and Node the most, but am interested in any format of coding.<br /><br /> Since I was young I have always been enchanted by the idea of how lines of code can be used to produce pretty much anything you can imagine; I attempted to teach myself online a few times throughout my teenage years but, due to the vast amount of technologies available, I had trouble finding the best place to start. I explored a few different fields after highschool but was eventually drawn back to my strong desire to become a developer and I have no regrets, this is my passion! I am consistently sharpening my skills and looking to learn further and grow as a developer.
                         </p>
                     </AboutParagraph>
                     <Flex>
@@ -53,7 +53,7 @@ export default function AboutMe() {
                     </Flex>
                     <AboutParagraph>
                         <p>
-                            Outside of coding I enjoy a variety of hobbies such as lifting heavy objects in the gym, playing an assortment of competitive/strategic games like chess and Rainbow Six Siege, and listening to music (Zach Bryan is on shuffle right now) and playing music (currently teaching myself guitar!).
+                            Outside of coding, I enjoy a variety of hobbies such as lifting heavy objects in the gym, hiking, fishing, playing an assortment of competitive/strategic games like chess and Rainbow Six Siege, and listening to music (Zach Bryan is on shuffle right now) and playing music (currently teaching myself guitar!).
                         </p>
                     </AboutParagraph>
                     <H3>- Skills -</H3>
