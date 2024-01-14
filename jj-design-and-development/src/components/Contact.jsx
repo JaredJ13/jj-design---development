@@ -6,7 +6,9 @@ import { Link } from 'react-scroll';
 import { ContactContainer, Container, Flex, H2, H2TitleContainer, InnerContainer, ArrowContainer, FlexContactExtend } from "../styles/styled-components/all-styled-components";
 
 // icons
-import UpArrowIcon from '../assets/white-icons/icons8-up-arrow-100.png'
+import UpArrowIcon from '../assets/black-icons/blk-up-arrow-100.png'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Contact() {
     const [emailSuccess, setEmailSuccess] = useState('')
@@ -52,20 +54,24 @@ export default function Contact() {
             <Container>
                 <InnerContainer>
                     <H2TitleContainer>
-                        <H2 id='contact' margin='8rem 0 0 0'>Get in Touch</H2>
+                        <H2 id='contact' margin='8rem 0 0 0'>Get In Touch</H2>
                     </H2TitleContainer>
                     <ContactContainer>
                         <FlexContactExtend>
                             <div className='left-side'>
                                 <p className='paragraph'>
-                                    To reach out about work, business, or anything in the tech field, send me a message using the form below. I’m always happy to chat tech!
+                                    To reach out about work, business, or anything in the tech field, send me a message using the form. I’m always happy to chat tech!
                                 </p>
-                                <p className='paragraph'>
+                                <div className='contact-icons'>
+                                    <a href='https://www.linkedin.com/in/jared-jahnke-672b8317a/'><LinkedInIcon className='linkedin-icon' fontSize="large"/></a>
+                                    <a href='https://github.com/JaredJ13'><GitHubIcon className='github-icon' fontSize="large"/></a>
+                                </div>
+                                {/* <p className='paragraph'>
                                     I am currently looking for internship and/or jr. dev positions.
-                                </p>
-                                <p className='last-paragraph'>
+                                </p> */}
+                                {/* <p className='last-paragraph'>
                                     *Interested in getting your own quality website or web application built? Send a message with your project details for a quote or just a general inquiry about your project vision and I will get back to you asap!
-                                </p>
+                                </p> */}
                             </div>
                             <div className='middle'></div>
                             <div className='right-side'>
@@ -77,7 +83,7 @@ export default function Contact() {
                                     <label name="users_message">Message</label>
                                     <textarea name='users_message' required />
                                     {loading ? <BarLoader
-                                        color='#afe1f6e7'
+                                        color='#7fc490'
                                         loading={loading}
                                         size={150}
                                         aria-label="Loading Spinner"

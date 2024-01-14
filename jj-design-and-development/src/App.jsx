@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <ThemeProvider theme={darkTheme}>
+      <ThemeProvider theme={lightTheme}>
         <Container>
           <Home />
         </Container>

@@ -12,10 +12,10 @@ const breakpoints = {
 // *********Header Components*********
 export const Header = styled.div`
     .header-container{
-        background-color: #000000;
-        font-family: 'Rufina', serif;
+        background-color: #ffffff;
+        font-family: 'Poppins', sans-serif;
         font-weight: bold;
-        color: #afe1f6;
+        color: #7fc490;
         font-size: 16px;
     }
     
@@ -26,10 +26,9 @@ export const Header = styled.div`
     }
     
     .header-flex{
-        position: relative;
         display: flex;
         align-items: end;
-        justify-content: center;
+        justify-content: space-between;
         width: 75%;
         margin: 0 auto;
         padding: 10rem 0 3rem 0;
@@ -53,10 +52,10 @@ export const Header = styled.div`
     } */
     
     .header-li {
-        font-family: 'Rufina', serif;
+        font-family: 'Poppins', sans-serif;
         margin-right: 2rem;
         margin-left: 2rem;
-        color: #dabfa7;
+        color: #000;
     }
     
     .header-li:first-of-type{
@@ -68,7 +67,7 @@ export const Header = styled.div`
     }
     
     .header-li:hover{
-        color: white;
+        color: #7fc490;
         transition: 0.2s ease-in;
         cursor: pointer;
     }
@@ -78,6 +77,8 @@ export const Header = styled.div`
     .mobile-menu{
         width: 3.5rem;
         margin: 0 auto;
+        color: #888888;
+        font-family: 'Poppins', sans-serif;
     }
     
     .mobile-menu-icon{
@@ -88,7 +89,7 @@ export const Header = styled.div`
         display: block;
         width: 100%;
         text-align: center;
-        color: #dabfa7;
+        color: #000000;
     }
     
     .open-icon:hover{
@@ -102,31 +103,24 @@ export const Header = styled.div`
     .mobile-nav-links{
         display: flex;
         flex-direction: column;
-        border-top: 1px solid #afe1f6;
+        border-top: 1px solid #7fc490;
     }
     
     .header-li-mobile:hover{
-        color: #ffffff;
+        color: #7fc490;
         transition: 0.3s ease-in;
         cursor: pointer;
-        background-color: #afe1f6e7;
+        background-color: #7fc490e7;
     }
     
     .header-li-mobile{
-        font-family: 'Rufina', sans-serif;
-        background-color: rgba(8, 8, 8, 0.947);
+        background-color: rgba(255, 255, 255, 0.947);
         padding-bottom: 2rem;
         padding-top: 2rem;
     }
     
-    .mobile-nav-links li:last-of-type{
-        
-    }
-    
     .mobile-menu-extension{
-        position:absolute;
         width: 100%;
-        z-index: 1000;
     }
     
     /* responsive styles */
@@ -160,15 +154,15 @@ export const Header = styled.div`
 
 // *********Container Components*********
 export const Container = styled.section`
-    background-color: #000;
-    font-family: 'rufina', serif;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
     font-family: ${(props) => props.fontFamily};
     width: 100%;
     height: 100%;
 `
 
 export const InnerContainer = styled.div`
-    background-color: #000;
+    background-color: #ffffff;
     width: 70%;
     height: 100%;
     margin: 0 auto;
@@ -197,8 +191,8 @@ export const Flex = styled.div`
 // *********About Me Page Components*********
 export const H2TitleContainer = styled.div`
     width: 386px;
-    background-color: #000000;
-    /* border-bottom: 1px solid #afe1f6; */
+    background-color: #ffffff;
+    /* border-bottom: 1px solid #7fc490; */
     margin: 5rem auto 0 auto;
 
     @media only screen and (max-width:1280px ){
@@ -211,7 +205,7 @@ export const H2TitleContainer = styled.div`
 `
 
 export const H2 = styled.h2`
-    color: #afe1f6;
+    color: #7fc490;
     color: ${(props) => props.color};
     font-size: 22px;
     text-align: center;
@@ -286,7 +280,7 @@ export const MySkillsContainerRow = styled.div`
     width: 50%;
     margin: 0 auto 1.5rem auto;
     padding-bottom:1rem ;
-    border-bottom: 1px solid #dabfa7;
+    border-bottom: 1px solid #7fc490;
 
     @media only screen and (max-width:1280px ){
         width: 50%;
@@ -304,7 +298,7 @@ export const AboutParagraph = styled.div`
     height: 100%;
     margin: 0 auto 0rem auto;
     
-    border-top: 1px solid #dabfa7;
+    border-top: 1px solid #7fc490;
 
     p{
         font-family: 'Oxygen', sans-serif;
@@ -321,7 +315,7 @@ export const AboutParagraph = styled.div`
 
 export const H3 = styled.h3`
     font-family: 'Oxygen', sans-serif;
-    color: #dabfa7;
+    color: #888888;
     text-align: center;
     font-size: 22px;
     margin-top: 5rem;
@@ -338,9 +332,9 @@ export const Card = styled.div`
     width: 100%;
     height: 360px;
     margin: 4rem 0 2rem 0;
-    background-color: #1b1b1b;
-    filter: drop-shadow(0px 0px 15px #ffffff);
-    border-radius: 2px;
+    background-color: #ffffff;
+    filter: drop-shadow(0px 0px 15px #dbdbdb);
+    border-radius: 8px;
 
     @media only screen and (max-width: 625px){
             height: 100%;
@@ -349,10 +343,17 @@ export const Card = styled.div`
     .left-side{
         width: 30%;
         height: 360px;
-        background-color: #1b1b1b;
+        background-color: #ffffff;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
 
         @media only screen and (max-width: 625px){
             width: 100%;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 8px;
         }  
     }
 
@@ -362,6 +363,17 @@ export const Card = styled.div`
         object-fit: cover;
         object-position: top;
         transition: all 5s linear;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+        @media only screen and (max-width: 625px){
+            width: 100%;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 8px;
+        }  
     }
 
     .left-side img:hover{
@@ -372,7 +384,7 @@ export const Card = styled.div`
     .mini-div{
         width: 1px;
         margin: 1% 0 1% 0.5rem;
-        background-color: #ffffff;
+        background-color: #7fc490;
 
         @media only screen and (max-width: 625px){
             display: none;
@@ -382,16 +394,24 @@ export const Card = styled.div`
     .right-side{
         width: 69%;
         height: 360px;
-        background-color: #1b1b1b;
+        background-color: #ffffff;
         position: relative;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
 
         @media only screen and (max-width: 625px){
             width: 100%;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 0px;
         }  
     }
 
     .right-p-container{
-        border-top: 1px solid #ffffff;
+        border-top: 1px solid #7fc490;
         margin-right: 7%;
         padding: 2rem 0 0 1.5rem;
         position: absolute;
@@ -507,7 +527,7 @@ export const ContactContainer = styled.div`
     }
 
     p{
-        color: #fff;
+        color: #000000;
         font-size: 16px;
         font-family: 'Oxygen', sans-serif;
 
@@ -521,13 +541,13 @@ export const ContactContainer = styled.div`
     }
 
     .last-paragraph{
-        color: #dabfa7;
+        color: #7fc490;
     }
 
     .middle{
         margin: 0 auto;
         width: 1px;
-        background-color: #afe1f6; 
+        background-color: #7fc490; 
 
         @media only screen and (max-width: 625px){
             width: 100%;
@@ -546,7 +566,7 @@ export const ContactContainer = styled.div`
 
     label{
         width: 100%;
-        color: #dabfa7;
+        color: #7fc490;
         font-size: 16px;
         font-family: 'Oxygen', sans-serif;
     }
@@ -572,7 +592,8 @@ export const ContactContainer = styled.div`
         width: 13rem;
         padding: 1rem;
         margin: 1rem 0 0 0;
-        background-color: #dabfa7;
+        background-color: #7fc490;
+        color: #ffffff;
         border-radius: 4px;
         border: none;
         font-family: 'Oxygen', sans-serif;
@@ -580,9 +601,20 @@ export const ContactContainer = styled.div`
 
     .submit-button:hover{
         cursor: pointer;
-        background-color: #afe1f6;
-        transition: 0.3s ease-in;
-        font-size: 17px;
+        background-color: #92dba4;
+        transition: 0.2s ease-in;
+    }
+
+    .contact-icons{
+        a{
+            color: #7fc490;
+        }
+
+        .linkedin-icon:hover, .github-icon:hover{
+            color: #92dba4;
+            cursor: pointer;
+            transition: 0.2s ease-in;
+        }
     }
 `
 
@@ -606,14 +638,16 @@ export const ArrowContainer = styled.div`
 
     p{
         margin-top: 1rem;
-        color: #dabfa7;
+        color: #7fc490;
         font-size: 12px;
         font-family: 'Oxygen', sans-serif;
         text-align: center;
     }
 
     p:hover{
+        color: #92dba4;
         cursor: pointer;
+        transition: 0.2s ease-in;
     }
 `
 
@@ -622,11 +656,12 @@ export const FooterContainer = styled.div`
     margin: 8rem 0 0 0;
     padding-bottom: 0.2rem;
     line-height: 1;
+    background-color: #fff;
 
     p{
         font-family: 'Oxygen', sans-serif;
         font-size: 10px;
-        color: #fff;
+        color: #000000;
         text-align: center;
     }
 

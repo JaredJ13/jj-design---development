@@ -14,23 +14,23 @@ import {
 } from '../styles/styled-components/all-styled-components';
 
 // import icons
-import ProgrammingIcon from '../assets/white-icons/icons8-programming-100.png';
-import GymIcon from '../assets/white-icons/icons8-pullups-100.png';
-import ChessIcon from '../assets/white-icons/icons8-king-100.png';
-import MusicIcon from '../assets/white-icons/icons8-music-heart-100.png';
-import JSIcon from '../assets/white-icons/icons8-js-100.png';
-import ReactIcon from '../assets/white-icons/icons8-react-native-100.png';
-import NodeJSIcon from '../assets/white-icons/icons8-nodejs-100.png';
-import CsIcon from '../assets/white-icons/icons8-cs-100.png';
-import AspIcon from '../assets/white-icons/icons8-asp-100.png';
-import HtmlIcon from '../assets/white-icons/icons8-html-100.png';
-import CssIcon from '../assets/white-icons/icons8-css3-100.png';
-import BootstrapIcon from '../assets/white-icons/icons8-bootstrap-100.png';
-import MySqlIcon from '../assets/white-icons/icons8-mysql-100.png';
-import FirebaseIcon from '../assets/white-icons/icons8-firebase-100.png';
-import OracleIcon from '../assets/white-icons/icons8-oracle-logo-100.png';
-import GithubIcon from '../assets/white-icons/icons8-github-100.png';
-import FigmaIcon from '../assets/white-icons/icons8-figma-100.png';
+import ProgrammingIcon from '../assets/black-icons/blk-programming-100.png';
+import GymIcon from '../assets/black-icons/blk-pullups-100.png';
+import ChessIcon from '../assets/black-icons/blk-king-100.png';
+import MusicIcon from '../assets/black-icons/blk-music-heart-100.png';
+import JSIcon from '../assets/black-icons/blk-js-100.png';
+import ReactIcon from '../assets/black-icons/blk-react-native-100.png';
+import NodeJSIcon from '../assets/black-icons/blk-nodejs-100.png';
+import CsIcon from '../assets/black-icons/blk-cs-100.png';
+import AspIcon from '../assets/black-icons/blk-asp-100.png';
+import HtmlIcon from '../assets/black-icons/blk-html-100.png';
+import CssIcon from '../assets/black-icons/blk-css3-100.png';
+import BootstrapIcon from '../assets/black-icons/blk-bootstrap-100.png';
+import MySqlIcon from '../assets/black-icons/blk-mysql-100.png';
+import FirebaseIcon from '../assets/black-icons/blk-firebase-100.png';
+import OracleIcon from '../assets/black-icons/blk-oracle-logo-100.png';
+import GithubIcon from '../assets/black-icons/blk-github-100.png';
+import FigmaIcon from '../assets/black-icons/blk-figma-100.png';
 
 export default function AboutMe() {
     return (
@@ -43,7 +43,7 @@ export default function AboutMe() {
                     <AboutIcon src={ProgrammingIcon} alt='Desktop monitor with coding icon' />
                     <AboutParagraph>
                         <p>
-                            Hi, my name is Jared Jahnke. I'm a junior developer who has completed a two-year computer software development diploma with honors from the Northern Alberta Institute of Technology and have developed a small, but serious, arsenal of coding skills. I enjoy working with Javascript, React, and Node the most, but am interested in any format of coding.<br /><br /> Since I was young I have always been enchanted by the idea of how lines of code can be used to produce pretty much anything you can imagine; I attempted to teach myself online a few times throughout my teenage years but, due to the vast amount of technologies available, I had trouble finding the best place to start. I explored a few different fields after highschool but was eventually drawn back to my strong desire to become a developer and I have no regrets, this is my passion! I am consistently sharpening my skills and looking to learn further and grow as a developer.
+                            Hi, my name is Jared Jahnke. I'm a software developer who has completed a computer software development diploma with honors from the Northern Alberta Institute of Technology. I am currently working as a jr. software developer for CE Solutions. This company designs and develops software and web solutions for small to medium sized companies mainly in Alberta. My position primarily involves me investigating, planning, and implementing bug fixes, testing features, and designing and developing features for a variety of softwares. Everyday I continue to learn and, consequently, increase my confidence as a developer. Currently, I work with .Net Framework, Javascript, Node, Jquery, Vue, SQL Server, and Firebase (auth, storage, and firestore). My first job in this field has only solidified my love for programming and tech. Getting to put your mind together with team mates and tackle new challenges everyday is so rewarding and always presents opportunities to learn and grow as a developer and as a person.<br /><br />
                         </p>
                     </AboutParagraph>
                     <Flex>
@@ -53,7 +53,7 @@ export default function AboutMe() {
                     </Flex>
                     <AboutParagraph>
                         <p>
-                            Outside of coding, I enjoy a variety of hobbies such as lifting heavy objects in the gym, hiking, fishing, playing an assortment of competitive/strategic games like chess and Rainbow Six Siege, and listening to music (Zach Bryan is on shuffle right now) and playing music (currently teaching myself guitar!).
+                            Outside of work, I enjoy a variety of hobbies such as lifting heavy objects in the gym, hiking, fishing, playing an assortment of competitive/strategic games like chess and Rainbow Six Siege, and listening to music (Zach Bryan is on shuffle right now). I also love to endulge in programming outside of work, whether it be developing a personal idea, playing around with new technologies, leetcode challenges, or hackathons (I just participated in my first one and will definetely be attending more). A technology I am really interested in right now is machine learning, I am working my way through some small tutorial projects so I can get a grasp on the major concepts and eventually implement models into personal projects. 
                         </p>
                     </AboutParagraph>
                     <H3>- Skills -</H3>

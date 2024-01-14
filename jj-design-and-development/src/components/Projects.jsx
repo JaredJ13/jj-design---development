@@ -1,10 +1,10 @@
 import { Container, H2TitleContainer, InnerContainer, H2, Card, Flex, H3ProjectsExtend, FlexProjectsExtend, ResourceProjectCardExtend, InnerContainerProjectsExtend } from "../styles/styled-components/all-styled-components";
 
 // icon imports
-import ReactIcon from '../assets/white-icons/icons8-react-native-100.png';
-import NodeJSIcon from '../assets/white-icons/icons8-nodejs-100.png';
-import CssIcon from '../assets/white-icons/icons8-css3-100.png';
-import FirebaseIcon from '../assets/white-icons/icons8-firebase-100.png';
+import ReactIcon from '../assets/black-icons/blk-react-native-100.png';
+import NodeJSIcon from '../assets/black-icons/blk-nodejs-100.png';
+import CssIcon from '../assets/black-icons/blk-css3-100.png';
+import FirebaseIcon from '../assets/black-icons/blk-firebase-100.png';
 
 // img imports
 import HazzardCountyProject from '../assets/hazzard-county-project/hazzard-project-combined.jpg'
