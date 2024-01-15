@@ -67,7 +67,7 @@ export const Header = styled.div`
     }
     
     .header-li:hover{
-        color: #7fc490;
+        color: #92dba4;
         transition: 0.2s ease-in;
         cursor: pointer;
     }
@@ -107,10 +107,10 @@ export const Header = styled.div`
     }
     
     .header-li-mobile:hover{
-        color: #7fc490;
+        color: #92dba4;
         transition: 0.3s ease-in;
         cursor: pointer;
-        background-color: #7fc490e7;
+        
     }
     
     .header-li-mobile{
@@ -172,12 +172,6 @@ export const InnerContainer = styled.div`
     }
 `
 
-export const InnerContainerProjectsExtend = styled(InnerContainer)`
-@media only screen and (max-width:625px){
-    padding-bottom: 45rem;   
-}
-`
-
 // *********Flex Components*********
 export const Flex = styled.div`
     display: flex;
@@ -185,6 +179,7 @@ export const Flex = styled.div`
     justify-content: ${(props) => props.justifyContent};
     align-items: ${(props) => props.alignItems};
     margin: ${(props) => props.margin};
+    flex-direction: ${(props) => props.flexDirection};
 `
 
 
@@ -193,7 +188,11 @@ export const H2TitleContainer = styled.div`
     width: 386px;
     background-color: #ffffff;
     /* border-bottom: 1px solid #7fc490; */
-    margin: 5rem auto 0 auto;
+    margin: 10rem auto 0 auto;
+
+    aside{
+        text-align: center;
+    }
 
     @media only screen and (max-width:1280px ){
         width: 40%;
@@ -330,8 +329,6 @@ export const H3 = styled.h3`
 // *********Projects Page Components*********
 export const Card = styled.div`
     width: 100%;
-    height: 360px;
-    margin: 4rem 0 2rem 0;
     background-color: #ffffff;
     filter: drop-shadow(0px 0px 15px #dbdbdb);
     border-radius: 8px;
@@ -342,7 +339,7 @@ export const Card = styled.div`
 
     .left-side{
         width: 30%;
-        height: 360px;
+        height: 100%;
         background-color: #ffffff;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
@@ -358,7 +355,7 @@ export const Card = styled.div`
     }
 
     .left-side img{
-        height: 100%;
+        height: 500px;
         width: 100%;
         object-fit: cover;
         object-position: top;
@@ -370,6 +367,7 @@ export const Card = styled.div`
 
         @media only screen and (max-width: 625px){
             width: 100%;
+            height: 300px;
             border-top-right-radius: 0px;
             border-top-left-radius: 0px;
             border-bottom-right-radius: 8px;
@@ -393,9 +391,8 @@ export const Card = styled.div`
 
     .right-side{
         width: 69%;
-        height: 360px;
+        height: 100%;
         background-color: #ffffff;
-        position: relative;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
         border-top-right-radius: 8px;
@@ -414,7 +411,7 @@ export const Card = styled.div`
         border-top: 1px solid #7fc490;
         margin-right: 7%;
         padding: 2rem 0 0 1.5rem;
-        position: absolute;
+        min-height: 178px;
 
         p{
             font-family: 'Oxygen', sans-serif;
@@ -444,19 +441,12 @@ export const Card = styled.div`
     }
 
     .right-icon-container{
-        width: 16rem;
-        height: 7.8rem;
-        margin-top: 4rem;
-        position: absolute;
-        bottom: -18px;   
-        
-        @media only screen and (max-width: 432px){
-            bottom: -35px;
-        }
+        @media only screen and (max-width: 625px){
+            margin-bottom: 2rem;
+        } 
     }
 
     .icon{
-        margin-top: 1rem;
         width: 3.5rem;
 
         @media only screen and (max-width: 432px){
@@ -477,17 +467,16 @@ export const Card = styled.div`
     }
 `
 
-export const ResourceProjectCardExtend = styled(Card)`
-    height: 475px;
-    margin-top: 8rem;
-
-    .right-side, .left-side{
-        height: 475px;
+export const H3ProjectsExtend = styled(H3)`
+    a{
+        color: #888888;
     }
 
-`
+    a:hover{
+        color: #92dba4;
+        transition: 0.2s ease-in;
+    }
 
-export const H3ProjectsExtend = styled(H3)`
     @media only screen and (max-width: 768px){
         font-size: 18px;
     }
