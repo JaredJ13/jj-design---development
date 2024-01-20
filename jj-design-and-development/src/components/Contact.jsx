@@ -141,7 +141,7 @@ export default function Contact() {
               </FlexContactExtend>
             </ContactContainer>
           </CustomTransition>
-          <CustomTransition type="slide" direction="up">
+          <CustomTransition type="fade">
             <ArrowContainer>
               <Link to="nav-menu" smooth={true} duration={1000}>
                 <img src={UpArrowIcon} alt="An up arrow icon" />
