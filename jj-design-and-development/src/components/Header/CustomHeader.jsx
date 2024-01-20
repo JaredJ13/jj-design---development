@@ -6,6 +6,7 @@ import { Header, H2, Container, InnerContainer } from '../../styles/styled-compo
 import MobileNavLinks from './MobileNavLinks'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import CustomTransition from '../Transitions/CustomTransition'
 
 import SiteLogo from '../../assets/jj-design-and-dev-logo.svg';
 
@@ -20,29 +21,31 @@ const CustomHeader = forwardRef((props, ref) => {
 
   return (
     <>
-    <Container>
-      <InnerContainer>
-        <Header>
-          <div id='nav-menu' className='header-container'>
-            <div className='header-flex'>
-              <H2>Jared Jahnke</H2>
-              {/* <img src={SiteLogo} className='site-logo' alt='JJ Design & Development website logo' /> */}
-              <ul>
-                <Link className='header-li' to='about-me' smooth={true} duration={1000}>About Me</Link>
-                <Link className='header-li' to='projects' smooth={true} duration={1000}>Projects</Link>
-                <Link className='header-li' to='contact' smooth={true} duration={1000}>Get In Touch</Link>
-              </ul>
+    <CustomTransition type="slide" direction="down">
+      <Container>
+        <InnerContainer>
+          <Header>
+            <div id='nav-menu' className='header-container'>
+              <div className='header-flex'>
+                <H2>Jared Jahnke</H2>
+                {/* <img src={SiteLogo} className='site-logo' alt='JJ Design & Development website logo' /> */}
+                <ul>
+                  <Link className='header-li' to='about-me' smooth={true} duration={1000}>About Me</Link>
+                  <Link className='header-li' to='projects' smooth={true} duration={1000}>Projects</Link>
+                  <Link className='header-li' to='contact' smooth={true} duration={1000}>Get In Touch</Link>
+                </ul>
+              </div>
+              <div className='mobile-menu'>
+                {openMenu ? closeIcon : hamburgerIcon}
+              </div>
+              <div className='mobile-menu-extension'>
+                <Collapse in={openMenu}><MobileNavLinks isMobile={true} closeMobileMenu={closeMobileMenu} /></Collapse>
+              </div>
             </div>
-            <div className='mobile-menu'>
-              {openMenu ? closeIcon : hamburgerIcon}
-            </div>
-            <div className='mobile-menu-extension'>
-              <Collapse in={openMenu}><MobileNavLinks isMobile={true} closeMobileMenu={closeMobileMenu} /></Collapse>
-            </div>
-          </div>
-        </Header>
-      </InnerContainer>
-    </Container>
+          </Header>
+        </InnerContainer>
+      </Container>
+    </CustomTransition>
     </>
   )
 })
