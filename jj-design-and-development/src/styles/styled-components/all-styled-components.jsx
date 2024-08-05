@@ -298,17 +298,30 @@ export const AboutParagraph = styled.div`
     margin: 0 auto 0rem auto;
     
     border-top: 1px solid #7fc490;
-
     p{
+        margin-top: 1rem;
         font-family: 'Oxygen', sans-serif;
+        width: 70%;
     }
-
     @media only screen and (max-width:1280px ){
         width: 100%;
     }
-
+    @media only screen and (max-width: 625px){
+        p{
+            width: 100%;
+        }
+    }
     @media only screen and (max-width: 320px){
         font-size: 12px;
+    }
+`
+
+export const AboutParagraphExtend = styled(AboutParagraph)`
+    p{
+        width: auto;
+    }
+    @media only screen and (max-width: 625px){
+        flex-direction: column-reverse;
     }
 `
 
@@ -323,6 +336,29 @@ export const H3 = styled.h3`
 
     @media only screen and (max-width: 320px){
         font-size: 18px;
+    }
+`
+
+export const PersonalImage = styled.div`
+    margin-top: 6%;
+    margin-right: 2rem;
+    width: 30%; 
+    height: 30%;
+    border-radius: 50%; 
+    overflow: hidden; 
+    img {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+    }
+    @media only screen and (max-width: 625px){
+        margin: 1rem auto 0 auto;
+    }
+`;
+
+export const AboutParagraphFlexExtend = styled(Flex)`
+    @media only screen and (max-width: 625px){
+        flex-direction: column;
     }
 `
 
@@ -461,6 +497,25 @@ export const Card = styled.div`
     .firebase-icon{
         width: 3rem;
 
+        @media only screen and (max-width: 432px){
+            width: 2rem;
+        }
+    }
+
+    .vue-icon{
+        width: 3rem;
+        @media only screen and (max-width: 432px){
+            width: 2rem;
+        }
+    }
+    .tailwind-icon{
+        width: 3rem;
+        @media only screen and (max-width: 432px){
+            width: 2rem;
+        }
+    }
+    .electron-icon{
+        width: 3rem;
         @media only screen and (max-width: 432px){
             width: 2rem;
         }
