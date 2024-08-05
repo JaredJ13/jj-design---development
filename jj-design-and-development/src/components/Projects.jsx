@@ -8,11 +8,15 @@ import NodeJSIcon from '../assets/black-icons/blk-nodejs-100.png';
 import CssIcon from '../assets/black-icons/blk-css3-100.png';
 import FirebaseIcon from '../assets/black-icons/blk-firebase-100.png';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import TailwindIcon from '../assets/black-icons/blk-tailwind-css-100.png'
+import VueIcon from '../assets/black-icons/blk-vue-100.png'
+import ElectronIcon from '../assets/black-icons/blk-electron-100.png'
 
 // img imports
 import HazzardCountyProject from '../assets/hazzard-county-project/hazzard-project-combined.jpg'
 import ResourceCompassProject from '../assets/resource-compass-project/resource-compass-combined.jpg'
 import PointTrackerProject from '../assets/score-tracker-project/pointtracker-project-combined.jpg'
+import TimeTrackerProject from '../assets/time-tracker-project/time-tracker-project-combined.jpg'
 
 export default function Projects() {
     return (
@@ -24,6 +28,40 @@ export default function Projects() {
                         <aside>*Click on a project's image to view a demo*</aside>
                     </H2TitleContainer>
                     <Grid container rowSpacing={4}>
+                    <Grid item xs={12} sx={{marginTop:'4rem'}}>
+                            <Card>
+                                <FlexProjectsExtend>
+                                    <div className="left-side">
+                                        <a><img src={TimeTrackerProject} alt="Electrong JS time tracker application overview" /></a>
+                                    </div>
+                                    <div className="mini-div"></div>
+                                    <div className="right-side">
+                                        <H3ProjectsExtend margin='1.5rem 0 1rem 0' fontWeight='500'>Daily Time Tracker Electron App</H3ProjectsExtend>
+                                        <Flex flexDirection='column' justifyContent='space-between'>
+                                            <div className="right-p-container">
+                                                <p>
+                                                    I built this as a solution to make tracking my tasks at work throughout the day simple and efficient.
+                                                </p>
+                                                <p>
+                                                    The tech used involves Vite, Vue 3 (Composition API), Firestore, Tailwind CSS, and Daisy UI Tailwind Component Library.
+                                                </p>
+                                                <p>
+                                                    This electron app requires the user to sign in using a google account using Firebase Auth. The user can then create time groups and start one task at a time associated to a created time group. A summary for each group is computed at the bottom of the screen where all the task descriptions are put into bullet form and can be copied by the click of a button. I use this every day at work. I also have features on the to-do list for it like adding a button to sync the times with the software we use at work.
+                                                </p>
+                                            </div>
+                                            <div className="right-icon-container">
+                                                <Flex justifyContent='start' alignItems='end' margin='0 0 0 1.2rem'>
+                                                    <img className='icon vue-icon' src={VueIcon} alt='VueJS icon' />
+                                                    <img className='icon tailwind-icon' src={TailwindIcon} alt='Tailwind CSS icon' />
+                                                    <img className='icon electron-icon' src={ElectronIcon} alt='Electron JS icon' />
+                                                    <img className='icon firebase-icon' src={FirebaseIcon} alt='Google Firebase icon' />
+                                                </Flex>
+                                            </div>
+                                        </Flex>
+                                    </div>
+                                </FlexProjectsExtend>
+                            </Card>
+                        </Grid>
                         <Grid item xs={12} sx={{marginTop:'4rem'}}>
                             <Card>
                                 <FlexProjectsExtend>
