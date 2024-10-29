@@ -45,7 +45,7 @@ export default function Projects() {
               <Card>
                 <FlexProjectsExtend>
                   <div className="left-side">
-                    <a>
+                    <a href="https://sailytimetracker.com/">
                       <img
                         src={TimeTrackerProject}
                         alt="Electrong JS time tracker application overview"
@@ -54,9 +54,17 @@ export default function Projects() {
                   </div>
                   <div className="mini-div"></div>
                   <div className="right-side">
-                    <H3ProjectsExtend margin="1.5rem 0 1rem 0" fontWeight="500">
-                      Daily Time Tracker Electron App
-                    </H3ProjectsExtend>
+                    <a href="https://sailytimetracker.com/">
+                      <H3ProjectsExtend
+                        margin="1.5rem 0 1rem 0"
+                        fontWeight="500"
+                      >
+                        <a href="https://sailytimetracker.com/">
+                          Daily Task Tracker{" "}
+                          <ArrowCircleRightIcon fontSize="medium" />
+                        </a>
+                      </H3ProjectsExtend>
+                    </a>
                     <Flex flexDirection="column" justifyContent="space-between">
                       <div className="right-p-container">
                         <p>
@@ -65,20 +73,20 @@ export default function Projects() {
                         </p>
                         <p>
                           The tech used involves Vite, Vue 3 (Composition API),
-                          Firestore, Tailwind CSS, and Daisy UI Tailwind
-                          Component Library.
+                          Firestore, Replicate AI, Tailwind CSS, and Daisy UI
+                          Tailwind Component Library.
                         </p>
                         <p>
-                          This electron app requires the user to sign in using a
-                          google account using Firebase Auth. The user can then
-                          create time groups and start one task at a time
-                          associated to a created time group. A summary for each
-                          group is computed at the bottom of the screen where
-                          all the task descriptions are put into bullet form and
-                          can be copied by the click of a button. I use this
-                          every day at work. I also have features on the to-do
-                          list for it like adding a button to sync the times
-                          with the software we use at work.
+                          This project allows you to create custom time groups
+                          so you can easily bounce between different clients,
+                          projects, portions of a project, etc. and then view
+                          the times summed for each group for your day along
+                          with all the descriptions put together in one spot so
+                          they can be easily copied. You can also query to see
+                          your time spent for other time periods and generate an
+                          AI summary to remove the redundant information and be
+                          given an explanation of how your time was spent in
+                          paragraph form.
                         </p>
                       </div>
                       <div className="right-icon-container">
