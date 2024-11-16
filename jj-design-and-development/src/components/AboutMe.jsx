@@ -13,7 +13,7 @@ import {
   MySkillsContainer,
   MySkillsContainerRow,
   PersonalImage,
-  AboutParagraphFlexExtend
+  AboutParagraphFlexExtend,
 } from "../styles/styled-components/all-styled-components";
 import CustomTransition from "./Transitions/CustomTransition";
 
@@ -39,7 +39,7 @@ import FirebaseIcon from "../assets/black-icons/blk-firebase-100.png";
 import OracleIcon from "../assets/black-icons/blk-oracle-logo-100.png";
 import GithubIcon from "../assets/black-icons/blk-github-100.png";
 import FigmaIcon from "../assets/black-icons/blk-figma-100.png";
-import PersonalPic from '../assets/personal-picture-cropped.png'
+import PersonalPic from "../assets/personal-picture-cropped.png";
 
 export default function AboutMe() {
   const [displayTitle, setDisplayTitle] = useState(true);
@@ -58,14 +58,34 @@ export default function AboutMe() {
               alt="Desktop monitor with coding icon"
             />
             <AboutParagraph>
-            <AboutParagraphFlexExtend>
-                            <PersonalImage>
-                                <img src={PersonalPic} alt='Personal selfie' />
-                            </PersonalImage>
-                            <p>
-                                Hi, my name is Jared Jahnke. I'm a software developer who has completed a computer software development diploma with honors from the Northern Alberta Institute of Technology. I am currently working as a jr. software developer for CE Solutions. This company designs and develops software and web solutions for small to medium sized companies mainly in Alberta. My position primarily involves me investigating, planning, and implementing bug fixes, testing features, and designing and developing features for a variety of web and mobile apps. Everyday I continue to learn and, consequently, increase my confidence as a developer. Currently, I work with .Net Framework, Javascript, Node, Jquery, Vue (2 & 3), Dart w/Flutter, SQL Server, and Firebase (auth, storage, and firestore). My first job in this field has only solidified my love for programming and tech. Getting to put your mind together with team mates and tackle new challenges everyday is so rewarding and always presents opportunities to learn and grow as a developer and as a person.<br /><br />
-                            </p>
-                        </AboutParagraphFlexExtend>
+              <AboutParagraphFlexExtend>
+                <PersonalImage>
+                  <img src={PersonalPic} alt="Personal selfie" />
+                </PersonalImage>
+                <p>
+                  Hi, I'm Jared Jahnke, a software developer with honors in
+                  Computer Software Development from the Northern Alberta
+                  Institute of Technology. I work as a Junior Software Developer
+                  at CE Solutions, developing software/web apps for small to
+                  medium-sized businesses across Alberta.
+                  <br />
+                  <br />
+                  My role involves planning and implementing bug fixes,
+                  developing new features, and testing both web and mobile
+                  applications. I primarily work with C#, ASP.NET Framework,
+                  JavaScript, jQuery, Node.js, Vue (2 & 3), SQL Server, and
+                  Firebase. I occasionally work on our mobile apps using
+                  Flutter. I also use Git and GitHub daily to manage code and
+                  collaborate with my team.
+                  <br />
+                  <br />
+                  This experience has deepened my passion for programming. I
+                  thrive on solving problems, learning new technologies, and
+                  contributing to projects that make an impact.
+                  <br />
+                  <br />
+                </p>
+              </AboutParagraphFlexExtend>
             </AboutParagraph>
           </CustomTransition>
           <CustomTransition type="fade">
@@ -84,16 +104,12 @@ export default function AboutMe() {
               <p>
                 Outside of work, I enjoy a variety of hobbies such as lifting
                 heavy objects in the gym, hiking, fishing, playing an assortment
-                of competitive/strategic games like chess and Rainbow Six Siege,
-                and listening to music (Zach Bryan is on shuffle right now). I
-                also love to endulge in programming outside of work, whether it
-                be developing a personal idea, playing around with new
+                of competitive/strategic games, and listening to music. I also
+                love to endulge in programming outside of work, whether it be
+                developing a personal idea, playing around with new
                 technologies, leetcode challenges, or hackathons (I just
                 participated in my first one and will definetely be attending
-                more). A technology I am really interested in right now is
-                machine learning, I am working my way through some small
-                tutorial projects so I can get a grasp on the major concepts and
-                eventually implement models into personal projects.
+                more).
               </p>
             </AboutParagraphExtend>
           </CustomTransition>
