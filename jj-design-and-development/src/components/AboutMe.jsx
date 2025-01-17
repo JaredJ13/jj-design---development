@@ -65,18 +65,14 @@ export default function AboutMe() {
                 <p>
                   Hi, I'm Jared Jahnke, a software developer with honors in
                   Computer Software Development from the Northern Alberta
-                  Institute of Technology. I work as a Junior Software Developer
-                  at CE Solutions, developing software/web apps for small to
-                  medium-sized businesses across Alberta.
+                  Institute of Technology. I work as a Software Developer
+                  at CE Solutions, developing software/web apps for businesses across Alberta.
                   <br />
                   <br />
                   My role involves planning and implementing bug fixes,
                   developing new features, and testing both web and mobile
-                  applications. I primarily work with C#, ASP.NET Framework,
-                  JavaScript, jQuery, Node.js, Vue (2 & 3), SQL Server, and
-                  Firebase. I occasionally work on our mobile apps using
-                  Flutter. I also use Git and GitHub daily to manage code and
-                  collaborate with my team.
+                  applications. I primarily work with C#, .NET Framework,
+                  JavaScript, jQuery, Node.js, Vue (2 & 3), SQL Server, Firebase, and occasionally Flutter.
                   <br />
                   <br />
                   This experience has deepened my passion for programming. I
@@ -103,13 +99,11 @@ export default function AboutMe() {
             <AboutParagraphExtend>
               <p>
                 Outside of work, I enjoy a variety of hobbies such as lifting
-                heavy objects in the gym, hiking, fishing, playing an assortment
-                of competitive/strategic games, and listening to music. I also
+                heavy objects in the gym, hiking, fishing, golfing, and playing an assortment
+                of competitive/strategic games. I also
                 love to endulge in programming outside of work, whether it be
                 developing a personal idea, playing around with new
-                technologies, leetcode challenges, or hackathons (I just
-                participated in my first one and will definetely be attending
-                more).
+                technologies, leetcode challenges, or hackathons.
               </p>
             </AboutParagraphExtend>
           </CustomTransition>

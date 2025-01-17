@@ -122,7 +122,7 @@ export default function Projects() {
                 </FlexProjectsExtend>
               </Card>
             </Grid>
-            <Grid item xs={12} sx={{ marginTop: "4rem" }}>
+            <Grid item xs={12}>
               <CustomTransition type="slide" direction="right">
                 <Card>
                   <FlexProjectsExtend>
